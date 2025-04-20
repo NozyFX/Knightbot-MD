@@ -1,5 +1,5 @@
 {
-    "name": "KnightBot-MD",
+    "name": "NozyBot-MD",
     "description": "Advanced WhatsApp Bot with Multiple Features",
     "keywords": [
         "bot",
@@ -16,8 +16,8 @@
             "required": false
         },
         "OWNER_NUMBER": {
-            "description": "Your WhatsApp number (e.g., 911234567890)",
-            "required": false
+            "description": "0696847160",
+            "required": true
         },
         "PREFIX": {
             "description": "Prefix for bot commands",
