@@ -1,12 +1,12 @@
 /**
- * Knight Bot - A WhatsApp Bot
- * Copyright (c) 2024 Professor
+ * NozyFX - A WhatsApp Bot
+ * Copyright (c) 2025 Professor
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the MIT License.
  * 
  * Credits:
- * - Baileys Library by @adiwajshing
+ * - Baileys Library by @NozyFX
  * - Pair Code implementation inspired by TechGod143 & DGXEON
  */
 require('./settings')
@@ -52,10 +52,10 @@ const store = makeInMemoryStore({
     })
 })
 
-let phoneNumber = "911234567890"
+let phoneNumber = "0696847160"
 let owner = JSON.parse(fs.readFileSync('./data/owner.json'))
 
-global.botname = "KNIGHT BOT"
+global.botname = "Nozy's Bot"
 global.themeemoji = "•"
 
 const pairingCode = !!phoneNumber || process.argv.includes("--pairing-code")
@@ -175,7 +175,7 @@ async function startXeonBotInc() {
         if (!!global.phoneNumber) {
             phoneNumber = global.phoneNumber
         } else {
-            phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`Please type your WhatsApp number 😍\nFor example: +917023951514 : `)))
+            phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`Please type your WhatsApp number 😍\nFor example: +27696847160 : `)))
         }
 
         phoneNumber = phoneNumber.replace(/[^0-9]/g, '')
@@ -205,14 +205,14 @@ async function startXeonBotInc() {
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
                         newsletterJid: '120363161513685998@newsletter',
-                        newsletterName: 'KnightBot MD',
+                        newsletterName: 'NozyFX MD',
                         serverMessageId: -1
                     }
                 }
             });
 
             await delay(1999)
-            console.log(chalk.yellow(`\n\n                  ${chalk.bold.blue(`[ ${global.botname || 'KNIGHT BOT'} ]`)}\n\n`))
+            console.log(chalk.yellow(`\n\n                  ${chalk.bold.blue(`[ ${global.botname || 'Nozy's Bot'} ]`)}\n\n`))
             console.log(chalk.cyan(`< ================================================== >`))
             console.log(chalk.magenta(`\n${global.themeemoji || '•'} YT CHANNEL: MR UNIQUE HACKER`))
             console.log(chalk.magenta(`${global.themeemoji || '•'} GITHUB: mrunqiuehacker`))
